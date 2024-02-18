@@ -6,6 +6,7 @@ export default function Home() {
     text-5xl
     ">
       Hola mundo!
+      Por Edgar Trejo Avila
     </h1>
   );
 }
