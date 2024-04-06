@@ -4,6 +4,7 @@ import HugeTitle from "./components/utils/huge-title";
 import portada from "/public/images/portada.png"
 import CtaButton from "./components/main/cta-button";
 import Milestone from "./components/main/milestone";
+import Footer from "./components/footer/footer";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
           description="In the old year of 2022, something happened"
           />
       </section>
+      <Footer />
     </>
   );
 }

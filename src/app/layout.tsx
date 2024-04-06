@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Courier_Prime } from "next/font/google";
 
 import localFont from "next/font/local";
 
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+const courier = Courier_Prime({
+  weight: [ "400", "700" ],
+  display: "swap",
+  variable: "--font-courier",
+  subsets: [ "latin-ext" ]
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${rosalia.variable}`}>{children}</body>
+      <body className={`${inter.className} ${rosalia.variable} ${courier.variable}`}>{children}</body>
     </html>
   );
 }
