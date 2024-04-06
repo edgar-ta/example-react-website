@@ -6,7 +6,7 @@ export default function() {
         src={separator} 
         width={1920}
         height={1080}
-        alt="Separator between sections"
+        alt="Separador entre secciones"
         className="
         bg-[linear-gradient(to_bottom,_white,_white_99%,_black_99%)]
         "
