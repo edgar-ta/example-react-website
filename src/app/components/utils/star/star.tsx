@@ -18,7 +18,7 @@ export default function(props: { className: string, starSize?: StarSize }) {
             src={star}
             alt="Estrella"
             width={width}
-            {...props}
+            className={props.className}
         />
     );
 }

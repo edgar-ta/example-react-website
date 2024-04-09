@@ -4,8 +4,8 @@ import RosaliaText from "../../utils/rosalia-text";
 import CourierText from "../../utils/courier-text";
 import Star from "../../utils/star/star";
 
-import thbLogo from "./thb-logo.svg";
 import curvedLine from "./curved-line.svg";
+import ThbLogo from "../../utils/thb-logo/thb-logo";
 
 export default function() {
     return (
@@ -18,17 +18,14 @@ export default function() {
         py-16
         relative
         ">
-            <CourierText>
+            <CourierText size="md">
                 Av. Río Moctezuma no. 43, intersección A con B, San Juan del Río, Querétaro, México.
             </CourierText>
-            <Image 
-                src={thbLogo}
-                alt="Logo de The House of Blues"
-            />
-            <RosaliaText className="text-white" textSize="lg">
+            <ThbLogo />
+            <RosaliaText className="text-white" size="lg">
                 VIVIMOS CREANDO NUESTRO MUNDO
             </RosaliaText>
-            <CourierText>
+            <CourierText size="md">
                 Copyright &copy; The House of Blues, 2024
             </CourierText>
 

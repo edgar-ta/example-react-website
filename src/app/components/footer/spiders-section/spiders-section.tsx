@@ -7,15 +7,20 @@ export default function() {
     return (
         <div className="
         grid
-        grid-rows-1
-        grid-cols-[repeat(5,_1fr)]
-        divide-x
-        divide-black
-        h-max
-        px-32
-        py-8
+
+        grid-cols-4
+        grid-rows-2
+
+        lg:grid-rows-1
+        lg:grid-cols-[repeat(5,_1fr)]
+        lg:divide-x
+        lg:divide-black
+        lg:h-max
+        lg:px-32
+        lg:py-8
         ">
-            <ContributorTab contributorName="carlos" />
+            <ContributorTab 
+                contributorName="carlos"/>
             <ContributorTab contributorName="edgar" />
             <a href="mailto:spiders.devteam@google.com" className="
             w-full
@@ -23,6 +28,16 @@ export default function() {
             flex
             justify-center
             items-center
+
+            row-start-2
+            row-end-3
+            col-start-1
+            col-end-5
+
+            lg:row-start-auto
+            lg:row-end-auto
+            lg:col-start-auto
+            lg:col-end-auto
             ">
                 <Image src={spidersLogo} alt="Logo de la empresa Spiders"/>
             </a>
