@@ -55,7 +55,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${rosalia.variable} ${courier.variable}`}>{children}</body>
+      <body className={`
+      ${inter.className} 
+      ${rosalia.variable} 
+      ${courier.variable}
+      w-full
+      overflow-x-clip
+      `}>
+        {children}
+      </body>
     </html>
   );
 }

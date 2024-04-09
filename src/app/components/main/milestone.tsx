@@ -23,14 +23,13 @@ export default function(
         
         className="
         grid
-        grid-cols-[repeat(2_auto)]
-        grid-rows-[repeat(2_auto)]
+        grid-cols-2
+        grid-rows-[repeat(2,_auto)]
 
-        xs:grid-cols-3
-        xs:px-16
+        xs:px-4
         
         sm:grid-cols-2
-        sm:grid-rows-[repeat(3,_auto)]
+        sm:grid-rows-[repeat(2,_auto)]
         sm:px-24
 
         md:px-40
@@ -44,15 +43,13 @@ export default function(
         ">
             <div className="
             xs:group-[&[data-image-orientation='right']]:col-start-1
-            xs:group-[&[data-image-orientation='left']]:col-start-3
+            xs:group-[&[data-image-orientation='left']]:col-start-2
             xs:row-start-2
 
             sm:row-start-1
 
             group-[&[data-image-orientation='right']]:col-start-1
-            
             group-[&[data-image-orientation='left']]:col-start-2
-            group-[&[data-image-orientation='left']]:row-start-1
             
             h-full
             w-full
@@ -107,10 +104,7 @@ export default function(
             aspect-square
             relative
 
-            xs:group-[&[data-image-orientation='left']]:col-start-1
-            xs:group-[&[data-image-orientation='left']]:col-end-3
-            xs:group-[&[data-image-orientation='right']]:col-start-2
-            xs:group-[&[data-image-orientation='right']]:col-end-4
+            xs:col-span-2
 
             sm:col-start-auto
             sm:col-end-auto
@@ -127,14 +121,11 @@ export default function(
                 <Image 
                     data-image-type={imageType}
                     className="
-                    group-[&[data-image-orientation='right']]:col-start-2
-
-                    group-[&[data-image-orientation='left']]:col-start-1
-                    group-[&[data-image-orientation='left']]:row-start-1
+                    xs:w-full
 
                     absolute
-                    [&[data-image-type='taller']]:w-full
-                    [&[data-image-type='wider']]:h-full
+                    sm:[&[data-image-type='taller']]:w-full
+                    sm:[&[data-image-type='wider']]:h-full
 
                     left-1/2
                     top-1/2
@@ -147,8 +138,6 @@ export default function(
             <MontserratText 
                 size="md"
                 className="
-                xs:col-span-2
-                sm:col-span-1
 
                 group-[&[data-image-orientation='right']]:col-start-2
                 group-[&[data-image-orientation='right']]:text-left

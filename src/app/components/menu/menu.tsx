@@ -25,6 +25,8 @@ export default function() {
         bg-white
         border-b
         border-b-black
+
+        md:border-b-0
         
         md:bg-transparent
         md:h-32
