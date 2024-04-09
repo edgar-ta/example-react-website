@@ -23,23 +23,28 @@ export default function() {
                 contributorName="carlos"/>
             <ContributorTab contributorName="edgar" />
             <a href="mailto:spiders.devteam@google.com" className="
-            w-full
-            h-full
             flex
             justify-center
             items-center
-
+            
             row-start-2
             row-end-3
             col-start-1
             col-end-5
+            h-8
 
+            md:w-full
+            md:h-full
+            
             lg:row-start-auto
             lg:row-end-auto
             lg:col-start-auto
             lg:col-end-auto
             ">
-                <Image src={spidersLogo} alt="Logo de la empresa Spiders"/>
+                <Image 
+                    src={spidersLogo} alt="Logo de la empresa Spiders"
+                    className="max-w-full max-h-full"
+                    />
             </a>
             <ContributorTab contributorName="leo" />
             <ContributorTab contributorName="uli" />

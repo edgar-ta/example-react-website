@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Courier_Prime } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 import localFont from "next/font/local";
 
@@ -11,6 +12,12 @@ const courier = Courier_Prime({
   weight: [ "400", "700" ],
   display: "swap",
   variable: "--font-courier",
+  subsets: [ "latin-ext" ]
+});
+const montserrat = Montserrat({
+  weight: [ "400", "700" ],
+  display: "swap",
+  variable: "--font-montserrat",
   subsets: [ "latin-ext" ]
 });
 

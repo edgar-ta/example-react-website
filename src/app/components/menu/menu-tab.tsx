@@ -1,6 +1,6 @@
 import Link from "next/link";
-import CourierText from "../utils/courier-text";
-import CourierTitle from "../utils/courier-title";
+import CourierText from "@/app/components/tipography/courier-text";
+import CourierTitle from "@/app/components/tipography/courier-title";
 
 export default function(
     props: { 

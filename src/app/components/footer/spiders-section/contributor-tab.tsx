@@ -1,5 +1,5 @@
-import CourierLabel from "../../utils/courier-label";
-import RosaliaText from "../../utils/rosalia-text";
+import CourierLabel from "../../tipography/courier-label";
+import RosaliaText from "@/app/components/tipography/rosalia-text";
 
 type ContributorName = "carlos" | "edgar" | "leo" | "uli";
 

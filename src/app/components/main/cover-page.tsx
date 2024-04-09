@@ -1,6 +1,5 @@
 import Image from "next/image";
-import HugeTitle from "@/app/components/utils/huge-title";
-import CtaButton from "@/app/components/main/cta-button";
+import RosaliaTitle from "@/app/components/tipography/rosalia-title";
 
 import portada from "/public/images/portada.png"
 
@@ -21,17 +20,12 @@ export default function() {
             -translate-x-1/2
             -translate-y-1/2
           ">
-            <HugeTitle className="
+            <RosaliaTitle size="md" className="
+            w-max
             text-white
             ">
               THE HOUSE OF BLUES
-            </HugeTitle>
-            <CtaButton className="
-            absolute
-            top-full
-            left-1/2
-            -translate-x-1/2
-            "/>
+            </RosaliaTitle>
           </div>
         </section>
     );

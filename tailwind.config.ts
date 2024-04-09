@@ -16,6 +16,10 @@ const config: Config = {
       fontFamily: {
         "rosalia": "var(--font-rosalia)",
         "courier": "var(--font-courier)",
+        "montserrat": "var(--font-montserrat)",
+      },
+      screens: {
+        xs: "400px"
       }
     },
   },

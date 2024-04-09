@@ -1,7 +1,9 @@
+import TextSize from "./text-size";
+
 export default function(props: { 
     children: Readonly<React.ReactNode>,
     className?: string,
-    size: "sm" | "md" | "lg"
+    size: TextSize
 }) {
     return (
         <p 
@@ -12,12 +14,13 @@ export default function(props: {
         text-center
 
         [&[data-size="md"]]:sm:text-md
-        [&[data-size="md"]]:md:text-md
-        [&[data-size="md"]]:lg:text-lg
+        [&[data-size="md"]]:md:text-xl
+        [&[data-size="md"]]:lg:text-2xl
 
-        [&[data-size="lg"]]:sm:text-md
-        [&[data-size="lg"]]:md:text-xl
-        [&[data-size="lg"]]:lg:text-2xl
+        [&[data-size="lg"]]:text-2xl
+        [&[data-size="lg"]]:sm:text-4xl
+        [&[data-size="lg"]]:md:text-6xl
+        [&[data-size="lg"]]:lg:text-8xl
 
         ${props.className}
         `}>

@@ -1,8 +1,10 @@
+import TextSize from "./text-size";
+
 export default function(
     props: { 
         children: Readonly<React.ReactNode>, 
         className?: string,
-        size: "sm" | "md" | "lg"
+        size: TextSize
     }
 ) {
     return (

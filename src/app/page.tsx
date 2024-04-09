@@ -14,6 +14,7 @@ export default function Home() {
         <Milestone 
           year={2022}
           month="dec"
+          imageOrientation="right"
           image={portada}
           alt="Something"
           description="In the old year of 2022, something happened"

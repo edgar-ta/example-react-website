@@ -1,76 +1,184 @@
 import { StaticImageData } from "next/image";
 import Image from "next/image";
+import MontserratText from "@/app/components/tipography/montserrat-text";
+import RosaliaTitle from "../tipography/rosalia-title";
+import RosaliaText from "../tipography/rosalia-text";
 
-interface MilestoneProps {
-    year: number,
-    month: "jan" | "feb" | "mar" | "apr" | "may" | "jun" | "jul" | "aug" | "sep" | "oct" | "nov" | "dec",
-    image: StaticImageData,
-    alt: string,
-    description: string
-};
+export default function(
+    props: {
+        year: number,
+        month: "jan" | "feb" | "mar" | "apr" | "may" | "jun" | "jul" | "aug" | "sep" | "oct" | "nov" | "dec",
+        imageOrientation: "left" | "right",
+        image: StaticImageData,
+        alt: string,
+        description: string
+    }
+) {
+    const imageAspectRatio = props.image.height / props.image.width;
+    const imageType = imageAspectRatio > 1 ? "taller" : "wider";
 
-export default function(props: MilestoneProps) {
     return (
-        <div className="
-        w-screen
-        px-[8rem]
-        py-[3.125rem]
-        flex
-        flex-col
-        items-center
-        gap-[3.75rem]
+        <div 
+        data-image-orientation={props.imageOrientation}
+        
+        className="
+        grid
+        grid-cols-[repeat(2_auto)]
+        grid-rows-[repeat(2_auto)]
+
+        xs:grid-cols-3
+        xs:px-16
+        
+        sm:grid-cols-2
+        sm:grid-rows-[repeat(3,_auto)]
+        sm:px-24
+
+        md:px-40
+
+        lg:px-38
+
+        xl:px-48
+        gap-8
+
+        group
         ">
             <div className="
-            grid
-            grid-rows-[repeat(2,_auto)]
-            grid-cols-2
-            gap-[3.75rem]
+            xs:group-[&[data-image-orientation='right']]:col-start-1
+            xs:group-[&[data-image-orientation='left']]:col-start-3
+            xs:row-start-2
+
+            sm:row-start-1
+
+            group-[&[data-image-orientation='right']]:col-start-1
+            
+            group-[&[data-image-orientation='left']]:col-start-2
+            group-[&[data-image-orientation='left']]:row-start-1
+            
+            h-full
+            w-full
+            relative
             ">
-                <div className="
-                w-full
-                h-full
-                flex
-                flex-col
-                -space-y-16
-                ">
-                    <p className="
-                    text-right
-                    font-rosalia
-                    text-[17.5rem]
-                    uppercase
-                    ">
-                        {props.month}
-                    </p>
-                    <p className="
-                    text-right
-                    font-rosalia
-                    text-[5.25rem]
-                    leading-[1]
-                    ">
-                        {props.year}
-                    </p>
-                </div>
-                <Image 
-                    src={props.image} 
-                    alt={props.alt} 
-                    width={300}
-                    height={300}
+                <RosaliaTitle 
+                size="lg"
+                className="
+                group-[&[data-image-orientation='right']]:text-right
+                group-[&[data-image-orientation='left']]:text-left
+                uppercase
+                text-transparent
+                pointer-events-none
+                leading-[1]
+                "
+                >
+                    {props.month}
+                </RosaliaTitle>
+                <RosaliaTitle 
+                size="lg"
+                className="
+                group-[&[data-image-orientation='right']]:text-right
+                group-[&[data-image-orientation='left']]:text-left
+
+                group-[&[data-image-orientation='right']]:right-0
+                group-[&[data-image-orientation='left']]:left-0
+                top-0
+                absolute
+                uppercase
+                text-black
+                leading-[1]
+                "
+                >
+                    {props.month}
+                </RosaliaTitle>
+                <RosaliaText 
+                    size="lg"
                     className="
-                    w-full
-                    h-full
+                    group-[&[data-image-orientation='right']]:text-right
+                    group-[&[data-image-orientation='left']]:text-left
+
+                    leading-[1]
                     "
-                    />
-                <p className="
-                col-start-2
-                col-end-3
-                ">{props.description}</p>
+                    >
+                    {props.year}
+                </RosaliaText>
             </div>
             <div className="
+            group-[&[data-image-orientation='right']]:justify-self-start
+            group-[&[data-image-orientation='left']]:justify-self-end
+
             aspect-square
-            h-[3.125rem]
-            bg-[#D9D9D9]
-            bg-opacity-20
-            rounded-full
+            relative
+
+            xs:group-[&[data-image-orientation='left']]:col-start-1
+            xs:group-[&[data-image-orientation='left']]:col-end-3
+            xs:group-[&[data-image-orientation='right']]:col-start-2
+            xs:group-[&[data-image-orientation='right']]:col-end-4
+
+            sm:col-start-auto
+            sm:col-end-auto
+            sm:row-start-auto
+            sm:row-end-auto
+
+            xs:w-full
+            sm:w-auto
+            sm:h-[16rem]
+            md:h-[18rem]
+            lg:h-[20rem]
+            xl:h-[24rem]
+            ">
+                <Image 
+                    data-image-type={imageType}
+                    className="
+                    group-[&[data-image-orientation='right']]:col-start-2
+
+                    group-[&[data-image-orientation='left']]:col-start-1
+                    group-[&[data-image-orientation='left']]:row-start-1
+
+                    absolute
+                    [&[data-image-type='taller']]:w-full
+                    [&[data-image-type='wider']]:h-full
+
+                    left-1/2
+                    top-1/2
+                    -translate-x-1/2
+                    -translate-y-1/2
+                    "
+                    src={props.image} 
+                    alt={props.alt} />
+            </div>
+            <MontserratText 
+                size="md"
+                className="
+                xs:col-span-2
+                sm:col-span-1
+
+                group-[&[data-image-orientation='right']]:col-start-2
+                group-[&[data-image-orientation='right']]:text-left
+
+                group-[&[data-image-orientation='left']]:col-start-1
+                group-[&[data-image-orientation='left']]:text-right
+                "
+                >
+                {props.description}
+            </MontserratText>
+            <div className="
+
+
+            relative
+            w-full
+
+            xs:h-8
+            xs:col-span-2
+            xs:before:h-full
+
+            lg:h-10
+
+            before:absolute
+            before:aspect-square
+            before:top-0
+            before:left-1/2
+            before:-translate-x-1/2
+            before:rounded-full
+            before:bg-black
+            before:bg-opacity-50
             "></div>
         </div>
     );

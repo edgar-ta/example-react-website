@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import RosaliaText from "../../utils/rosalia-text";
-import CourierText from "../../utils/courier-text";
+import RosaliaText from "@/app/components/tipography/rosalia-text";
+import CourierText from "@/app/components/tipography/courier-text";
 import Star from "../../utils/star/star";
 
 import curvedLine from "./curved-line.svg";
@@ -22,7 +22,7 @@ export default function() {
                 Av. Río Moctezuma no. 43, intersección A con B, San Juan del Río, Querétaro, México.
             </CourierText>
             <ThbLogo />
-            <RosaliaText className="text-white" size="lg">
+            <RosaliaText className="text-white" size="md">
                 VIVIMOS CREANDO NUESTRO MUNDO
             </RosaliaText>
             <CourierText size="md">
