@@ -1,4 +1,4 @@
-import CourierText from "../utils/courier-text";
+import CourierText from "@/app/components/tipography/courier-text";
 import SocialMediaIcon from "../utils/social-media-icon/social-media-icon";
 
 export default function() {
