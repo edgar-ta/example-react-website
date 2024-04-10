@@ -49,8 +49,12 @@ export default function() {
             
             <Thread 
                 className="
-                inset-0
+                top-0
+                left-0
+                w-full
+                h-full
                 absolute
+                pointer-events-none
                 "
                 />
         </section>

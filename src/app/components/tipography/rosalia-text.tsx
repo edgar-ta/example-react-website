@@ -11,7 +11,6 @@ export default function(props: {
 
         className={`
         font-rosalia
-        text-center
 
         [&[data-size="md"]]:sm:text-md
         [&[data-size="md"]]:md:text-xl

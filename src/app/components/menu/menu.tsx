@@ -7,21 +7,23 @@ import Link from "next/link";
 import MenuTab from "./menu-tab";
 import { useState } from "react";
 
-export default function() {
+export default function(
+    props: {
+        className?: string
+    }
+) {
     const [ isOpen, setOpen ] = useState(false);
 
     return (
-        <nav className="
-        flex
+        <nav className={
+        `flex
         justify-center
         items-center
         z-10
         
         px-4
         h-16
-        top-0
         w-full
-        fixed
         bg-white
         border-b
         border-b-black
@@ -31,7 +33,9 @@ export default function() {
         md:bg-transparent
         md:h-32
         md:mix-blend-difference
-        ">
+
+        ${props.className}
+        `}>
             <div className="
             flex
             md:hidden

@@ -38,7 +38,8 @@ export default function(
 
     return (
         <a className={
-        `w-full
+        `
+        w-full
         h-full
         flex
         flex-col
@@ -49,10 +50,20 @@ export default function(
         `}
         href={socialMedia}
         >
-            <CourierLabel size="md">
+            <CourierLabel 
+                size="md"
+                className="
+                text-center
+                "
+                >
                 { position }
             </CourierLabel>
-            <RosaliaText size="md">
+            <RosaliaText 
+                size="md"
+                className="
+                text-center
+                "
+                >
                 { fullName }
             </RosaliaText>
         </a>

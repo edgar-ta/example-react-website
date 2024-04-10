@@ -20,7 +20,6 @@ export default function(
         font-courier
         uppercase
         text-xs
-        text-center
         ${props.className}
         `}
         >

@@ -9,7 +9,12 @@ export default function() {
         flex
         flex-col
         ">
-            <Separator />
+            <Separator 
+            className="
+            w-full
+            object-none
+            " 
+            />
             <SocialMediaBar />
             <ThbSection />
             <SpidersSection />

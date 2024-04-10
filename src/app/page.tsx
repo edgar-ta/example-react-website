@@ -9,7 +9,6 @@ import Timeline from "./components/main/timeline/timeline";
 export default function Home() {
   return (
     <>
-      <Menu />
       <CoverPage />
       <Timeline />
       <Footer />
