@@ -29,6 +29,11 @@ export default function(props: SocialMediaIconProps) {
         rounded-full
         relative
         overflow-clip
+        transition-all
+        duration-300
+        hover:invert
+        hover:ring
+        hover:ring-black
         "
         href={link}
         >

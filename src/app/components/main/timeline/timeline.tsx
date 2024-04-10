@@ -24,6 +24,7 @@ export default function() {
                     month="oct"
                     year={2022}
                     alt="Fotografía de los directivos de THB"
+                    style="white"
                     />
                 <Milestone 
                     image={image_2022_11}
@@ -32,6 +33,7 @@ export default function() {
                     month="nov"
                     year={2022}
                     alt="Fotografía de los directivos de THB"
+                    style="white"
                     />
                 <Milestone 
                     image={image_2023_01}
@@ -40,6 +42,7 @@ export default function() {
                     month="jan"
                     year={2023}
                     alt="Fotografía de los directivos de THB"
+                    style="black"
                     />
                 <Milestone 
                     image={image_2023_04}
@@ -48,6 +51,7 @@ export default function() {
                     month="apr"
                     year={2023}
                     alt="Fotografía de los directivos de THB"
+                    style="black"
                     />
                 
                 <Thread 

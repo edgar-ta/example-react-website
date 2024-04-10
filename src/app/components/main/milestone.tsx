@@ -11,7 +11,8 @@ export default function(
         imageOrientation: "left" | "right",
         image: StaticImageData,
         alt: string,
-        description: string
+        description: string,
+        style: "black" | "white"
     }
 ) {
     const imageAspectRatio = props.image.height / props.image.width;
@@ -20,6 +21,7 @@ export default function(
     return (
         <div 
         data-image-orientation={props.imageOrientation}
+        data-style={props.style}
         
         className="
         grid
@@ -77,7 +79,8 @@ export default function(
                 top-0
                 absolute
                 uppercase
-                text-black
+                group-[&[data-style='white']]:text-white
+                group-[&[data-style='black']]:text-black
                 leading-[1]
                 "
                 >
@@ -90,7 +93,8 @@ export default function(
                     group-[&[data-image-orientation='left']]:text-left
 
                     leading-[1]
-                    text-black
+                    group-[&[data-style='white']]:text-white
+                    group-[&[data-style='black']]:text-black
                     "
                     >
                     {props.year}
@@ -144,7 +148,8 @@ export default function(
                 group-[&[data-image-orientation='left']]:col-start-1
                 group-[&[data-image-orientation='left']]:text-right
 
-                text-black
+                group-[&[data-style='white']]:text-white
+                group-[&[data-style='black']]:text-black
                 "
                 >
                 {props.description}
