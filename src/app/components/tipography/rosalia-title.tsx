@@ -13,6 +13,15 @@ export default function(props: Readonly<{
         className={`
         font-rosalia 
 
+        [&[data-size="sm"]]:text-2xl
+        [&[data-size="sm"]]:xs:text-3xl
+        [&[data-size="sm"]]:sm:text-4xl
+        [&[data-size="sm"]]:md:text-5xl
+        [&[data-size="sm"]]:lg:text-6xl
+        [&[data-size="sm"]]:xl:text-7xl
+
+        [&[data-size="md"]]:text-5xl
+        [&[data-size="md"]]:xs:text-6xl
         [&[data-size="md"]]:sm:text-6xl
         [&[data-size="md"]]:md:text-7xl
         [&[data-size="md"]]:lg:text-8xl

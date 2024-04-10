@@ -10,19 +10,28 @@ export default function() {
         w-full
         bg-black
 
-        hover:before:w-full
+        before:w-full
+        before:h-[0.5px]
+        before:bg-opacity-50
+        
+        md:hover:before:w-full
+        md:before:w-1/3
+        md:before:h-[1px]
+        md:before:bg-opacity-100
+
         before:transition-all
         before:absolute
-        before:w-1/3
         before:left-1/2
         before:-translate-x-1/2
         before:top-1/2
-        before:h-[1px]
         before:bg-white
         ">
             <div className="
             flex
-            w-1/3
+            w-3/4
+
+            md:w-1/3
+
             px-[1rem]
             py-[1rem]
             justify-evenly

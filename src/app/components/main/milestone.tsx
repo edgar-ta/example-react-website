@@ -42,14 +42,12 @@ export default function(
         group
         ">
             <div className="
-            xs:group-[&[data-image-orientation='right']]:col-start-1
-            xs:group-[&[data-image-orientation='left']]:col-start-2
-            xs:row-start-2
-
-            sm:row-start-1
-
+            row-start-2
             group-[&[data-image-orientation='right']]:col-start-1
             group-[&[data-image-orientation='left']]:col-start-2
+
+            
+            sm:row-start-1
             
             h-full
             w-full
@@ -92,6 +90,7 @@ export default function(
                     group-[&[data-image-orientation='left']]:text-left
 
                     leading-[1]
+                    text-black
                     "
                     >
                     {props.year}
@@ -104,14 +103,14 @@ export default function(
             aspect-square
             relative
 
-            xs:col-span-2
-
+            w-full
+            col-span-2
+            
             sm:col-start-auto
             sm:col-end-auto
             sm:row-start-auto
             sm:row-end-auto
-
-            xs:w-full
+            
             sm:w-auto
             sm:h-[16rem]
             md:h-[18rem]
@@ -144,6 +143,8 @@ export default function(
 
                 group-[&[data-image-orientation='left']]:col-start-1
                 group-[&[data-image-orientation='left']]:text-right
+
+                text-black
                 "
                 >
                 {props.description}
@@ -154,9 +155,11 @@ export default function(
             relative
             w-full
 
+            h-4
+            col-span-2
+            before:h-full
+
             xs:h-8
-            xs:col-span-2
-            xs:before:h-full
 
             lg:h-10
 

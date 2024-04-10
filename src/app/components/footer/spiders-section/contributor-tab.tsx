@@ -54,6 +54,7 @@ export default function(
                 size="md"
                 className="
                 text-center
+                text-black
                 "
                 >
                 { position }
@@ -62,6 +63,7 @@ export default function(
                 size="md"
                 className="
                 text-center
+                text-black
                 "
                 >
                 { fullName }
