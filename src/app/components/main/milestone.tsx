@@ -3,6 +3,7 @@ import Image from "next/image";
 import MontserratText from "@/app/components/tipography/montserrat-text";
 import RosaliaTitle from "../tipography/rosalia-title";
 import RosaliaText from "../tipography/rosalia-text";
+import HorizontalPadding from "../utils/horizontal-padding";
 
 export default function(
     props: {
@@ -19,26 +20,17 @@ export default function(
     const imageType = imageAspectRatio > 1 ? "taller" : "wider";
 
     return (
-        <div 
+        <HorizontalPadding 
         data-image-orientation={props.imageOrientation}
         data-style={props.style}
-        
+
         className="
         grid
         grid-cols-2
         grid-rows-[repeat(2,_auto)]
-
-        xs:px-4
         
         sm:grid-cols-2
         sm:grid-rows-[repeat(2,_auto)]
-        sm:px-24
-
-        md:px-40
-
-        lg:px-38
-
-        xl:px-48
         gap-8
 
         group
@@ -177,7 +169,7 @@ export default function(
             before:bg-black
             before:bg-opacity-50
             "></div>
-        </div>
+        </HorizontalPadding>
     );
 }
 

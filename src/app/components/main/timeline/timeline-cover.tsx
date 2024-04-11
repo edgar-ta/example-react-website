@@ -1,10 +1,11 @@
 import MontserratText from "../../tipography/montserrat-text";
 import RosaliaTitle from "../../tipography/rosalia-title";
+import HorizontalPadding from "../../utils/horizontal-padding";
 import ThbLogo from "../../utils/thb-logo/thb-logo";
 
 export default function() {
     return (
-        <div className="
+        <HorizontalPadding className="
         bg-black
         text-white
         min-h-[50vh]
@@ -23,13 +24,6 @@ export default function() {
 
         justify-center
         items-center
-
-        px-2
-        xs:px-4
-        sm:px-24
-        md:px-40
-        lg:px-38
-        xl:px-48
 
         relative
         ">
@@ -54,6 +48,6 @@ export default function() {
 
             md:justify-self-center
             " />
-        </div>
+        </HorizontalPadding>
     );
 }

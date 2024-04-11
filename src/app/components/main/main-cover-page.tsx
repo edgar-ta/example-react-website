@@ -13,6 +13,7 @@ export default function() {
       <CoverPage 
         image={portada}
         alt="Miembros de The House of Blues"
+        hasMenu={true}
         >
           <ThreeWordArrangement 
           firstWord="THE"

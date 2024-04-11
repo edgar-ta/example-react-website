@@ -14,16 +14,27 @@ export default function(
     return (
         <div className="
         w-full
-        aspect-[3_/_4]
+        aspect-[9_/_16]
+        md:aspect-[3_/_4]
         rounded-3xl
         relative
         p-8
-        shadow-sm
+        shadow-lg
         flex
         flex-col
         items-stretch
         cursor-pointer
         overflow-hidden
+
+        before:absolute
+        before:top-0
+        before:left-0
+        before:w-full
+        before:h-full
+        before:bg-gradient-radial
+        before:from-[rgba(0,_0,_0,_0.75)]
+        before:to-transparent
+        before:z-10
         ">
             <Image 
                 src={props.image}
@@ -57,6 +68,7 @@ export default function(
             -translate-x-1/2
             -translate-y-1/2
             w-4/5
+            z-20
             ">
                 <CourierLabel 
                 size="lg"
@@ -89,6 +101,7 @@ export default function(
                 border-t-white
                 border-opacity-50
                 justify-self-end
+                z-20
                 ">
                     {props.children}
                 </div>

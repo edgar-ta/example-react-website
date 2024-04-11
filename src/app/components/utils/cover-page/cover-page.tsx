@@ -7,7 +7,8 @@ export default function(
         className?: string,
         image: StaticImageData,
         alt: string,
-        children?: Readonly<React.ReactNode>
+        children?: Readonly<React.ReactNode>,
+        hasMenu?: boolean
     }
 ) {
     return (
@@ -54,10 +55,14 @@ export default function(
           "
           />
 
-          <Menu className="
-          absolute
-          top-0
-          "/>
+          {
+            props.hasMenu &&
+            <Menu className="
+            absolute
+            top-0
+            "/>
+          }
+
           <div className="
             absolute
             top-1/2

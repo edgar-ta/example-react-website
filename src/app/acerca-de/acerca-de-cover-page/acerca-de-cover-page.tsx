@@ -9,6 +9,7 @@ export default function() {
         <CoverPage
             image={equipoDeTheHouseOfBlues}
             alt="Equipo de The House of Blues"
+            hasMenu={true}
         >
             <ThreeWordArrangement 
                 firstWord="MEET"
@@ -18,5 +19,3 @@ export default function() {
         </CoverPage>
     );
 }
-
-

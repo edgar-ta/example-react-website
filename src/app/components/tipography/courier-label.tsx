@@ -13,12 +13,14 @@ export default function(
 
         className={`
 
+        [&[data-size="md"]]:text-xs
         [&[data-size="md"]]:sm:text-xs
         [&[data-size="md"]]:md:text-xs
         [&[data-size="md"]]:lg:text-sm
 
-        [&[data-size="lg"]]:sm:text-lg
-        [&[data-size="lg"]]:md:text-lg
+        [&[data-size="lg"]]:text-xl
+        [&[data-size="lg"]]:sm:text-xl
+        [&[data-size="lg"]]:md:text-xl
         [&[data-size="lg"]]:lg:text-2xl
 
         font-courier
