@@ -7,7 +7,7 @@ export default function(
     props: {
         name: string,
         charge: string,
-        children: Readonly<React.ReactNode>,
+        children?: Readonly<React.ReactNode>,
         image: StaticImageData,
     }
 ) {
