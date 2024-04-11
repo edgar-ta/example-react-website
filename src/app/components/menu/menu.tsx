@@ -26,13 +26,12 @@ export default function(
         w-full
         bg-white
         border-b
-        border-b-black
+        border-b-neutral-500
 
         md:border-b-0
         
         md:bg-transparent
         md:h-32
-        md:mix-blend-difference
 
         ${props.className}
         `}>

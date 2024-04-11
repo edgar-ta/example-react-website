@@ -16,6 +16,7 @@ export default function() {
             relative
             overflow-hidden
             bg-[linear-gradient(to_bottom,_black_5%,_white)]
+            space-y-32
             ">
                 <Milestone 
                     image={image_2022_10}
@@ -39,7 +40,7 @@ export default function() {
                     image={image_2023_01}
                     description="Junto al equipo de producción comenzamos con los preparativos del show debut de la compañía, “TSUNAMI”"
                     imageOrientation="right"
-                    month="jan"
+                    month="ene"
                     year={2023}
                     alt="Fotografía de los directivos de THB"
                     style="black"
@@ -48,7 +49,7 @@ export default function() {
                     image={image_2023_04}
                     description="Se hace oficial el anuncio de la compañía “The House of Blues”"
                     imageOrientation="left"
-                    month="apr"
+                    month="abr"
                     year={2023}
                     alt="Fotografía de los directivos de THB"
                     style="black"

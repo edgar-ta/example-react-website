@@ -30,11 +30,14 @@ export default function() {
         md:px-40
         lg:px-38
         xl:px-48
+
+        relative
         ">
             <RosaliaTitle size="sm" className="
             w-full
             lg:col-span-2
             text-left
+            md:text-center
             ">
                 Vivimos creando nuestro mundo
             </RosaliaTitle>

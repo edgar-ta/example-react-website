@@ -10,6 +10,8 @@ export default function(
     return (
         <p className={`
         font-montserrat
+        text-sm
+        md:text-base
         ${props.className}
         `}>
             {props.children}

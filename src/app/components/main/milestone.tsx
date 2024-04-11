@@ -7,7 +7,7 @@ import RosaliaText from "../tipography/rosalia-text";
 export default function(
     props: {
         year: number,
-        month: "jan" | "feb" | "mar" | "apr" | "may" | "jun" | "jul" | "aug" | "sep" | "oct" | "nov" | "dec",
+        month: "ene" | "feb" | "mar" | "abr" | "may" | "jun" | "jul" | "ago" | "sep" | "oct" | "nov" | "dic",
         imageOrientation: "left" | "right",
         image: StaticImageData,
         alt: string,

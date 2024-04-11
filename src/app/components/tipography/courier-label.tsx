@@ -17,6 +17,10 @@ export default function(
         [&[data-size="md"]]:md:text-xs
         [&[data-size="md"]]:lg:text-sm
 
+        [&[data-size="lg"]]:sm:text-lg
+        [&[data-size="lg"]]:md:text-lg
+        [&[data-size="lg"]]:lg:text-2xl
+
         font-courier
         uppercase
         text-xs
