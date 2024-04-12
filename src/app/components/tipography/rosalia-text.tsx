@@ -12,6 +12,12 @@ export default function(props: {
         className={`
         font-rosalia
 
+        [&[data-size="sm"]]:text-[0.25rem]
+        [&[data-size="sm"]]:xs:text-[0.5rem]
+        [&[data-size="sm"]]:sm:text-[0.5rem]
+        [&[data-size="sm"]]:md:text-[0.5rem]
+        [&[data-size="sm"]]:lg:text-xs
+
         [&[data-size="md"]]:sm:text-md
         [&[data-size="md"]]:md:text-xl
         [&[data-size="md"]]:lg:text-2xl
