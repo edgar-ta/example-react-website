@@ -4,6 +4,7 @@ import MontserratText from "@/app/components/tipography/montserrat-text";
 import RosaliaTitle from "../tipography/rosalia-title";
 import RosaliaText from "../tipography/rosalia-text";
 import HorizontalPadding from "../utils/horizontal-padding";
+import EventMarker from "./event-marker";
 
 export default function(
     props: {
@@ -146,29 +147,12 @@ export default function(
                 >
                 {props.description}
             </MontserratText>
-            <div className="
-
-
-            relative
-            w-full
-
-            h-4
-            col-span-2
-            before:h-full
-
-            xs:h-8
-
-            lg:h-10
-
-            before:absolute
-            before:aspect-square
-            before:top-0
-            before:left-1/2
-            before:-translate-x-1/2
-            before:rounded-full
-            before:bg-black
-            before:bg-opacity-50
-            "></div>
+            <EventMarker 
+                className="
+                w-full
+                col-span-2
+                "
+                />
         </HorizontalPadding>
     );
 }

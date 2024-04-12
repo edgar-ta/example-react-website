@@ -25,16 +25,6 @@ export default function(
         items-stretch
         cursor-pointer
         overflow-hidden
-
-        before:absolute
-        before:top-0
-        before:left-0
-        before:w-full
-        before:h-full
-        before:bg-gradient-radial
-        before:from-[rgba(0,_0,_0,_0.75)]
-        before:to-transparent
-        before:z-10
         ">
             <Image 
                 src={props.image}
@@ -64,7 +54,7 @@ export default function(
             <div className="
             absolute
             left-1/2
-            top-1/2
+            top-2/3
             -translate-x-1/2
             -translate-y-1/2
             w-4/5
@@ -89,6 +79,7 @@ export default function(
                 className="
                 text-center
                 text-white
+                
                 "
                 >
                     {props.name}

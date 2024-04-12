@@ -7,19 +7,20 @@ import tiktokLogo from "./tiktok-logo.svg"
 
 type SocialMediaType = "facebook" | "instagram" | "youtube" | "tiktok";
 
-interface SocialMediaIconProps {
-    socialMediaType: SocialMediaType
-}
-
-const data: { [ key in SocialMediaType ]: [ string, StaticImageData ] } = {
-    facebook: [ "https://www.facebook.com", facebookLogo ],
-    instagram: [ "https://www.instagram.com", instagramLogo ],
-    youtube: [ "https://www.youtube.com", youtubeLogo ],
-    tiktok: [ "https://www.tiktok.com", tiktokLogo ],
+const data: { [ key: string ]: StaticImageData } = {
+    facebook: facebookLogo,
+    instagram: instagramLogo,
+    youtube: youtubeLogo,
+    tiktok: tiktokLogo
 };
 
-export default function(props: SocialMediaIconProps) {
-    const [ link, logoData ] = data[props.socialMediaType];
+export default function(
+    props: {
+        className?: string,
+        socialMediaType: SocialMediaType,
+        href?: string
+    }
+) {
 
     return (
         <a className="
@@ -35,10 +36,10 @@ export default function(props: SocialMediaIconProps) {
         hover:ring
         hover:ring-black
         "
-        href={link}
+        href={props.href}
         >
             <Image
-                src={logoData}
+                src={data[props.socialMediaType]}
                 alt={`Logo de ${props.socialMediaType}`}
                 className="
                 max-w-[75%]

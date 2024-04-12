@@ -1,19 +1,17 @@
 import CoverPage from "@/app/components/utils/cover-page/cover-page";
-
-import nuestrosBailarines from "./nuestros-bailarines.jpg";
+import primerShow from "./primer-show.png";
 import RosaliaTitle from "@/app/components/tipography/rosalia-title";
 
 export default function() {
     return (
-        <CoverPage
-        image={nuestrosBailarines}
-        alt="Bailarines de The House of Blues"
-        hasMenu={false}
+        <CoverPage 
+            alt="Primer show the The House of Blues"
+            image={primerShow}
+            hasMenu={true}
         >
             <RosaliaTitle size="md">
-                NUESTROS <br/> BAILARINES
+                PRÓXIMAMENTE
             </RosaliaTitle>
         </CoverPage>
     );
 }
-

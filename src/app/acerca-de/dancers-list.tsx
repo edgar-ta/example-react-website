@@ -49,16 +49,15 @@ export default function() {
                     name="Wendy"
                     lastName="Paz"
                     />
-                <DancersCard 
-                    name="Luis"
-                    lastName="Ángel"
-                    />
             </div>
             <div className="
             flex
             flex-wrap
             justify-center
             ">
+                <DancersCard 
+                    name="Luis Ángel"
+                    />
                 <DancersCard 
                     name="Emmanuel"
                     />

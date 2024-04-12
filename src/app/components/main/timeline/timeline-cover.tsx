@@ -35,7 +35,9 @@ export default function() {
             ">
                 Vivimos creando nuestro mundo
             </RosaliaTitle>
-            <MontserratText size="md">
+            <MontserratText size="md" className="
+            text-justify
+            ">
                 The House of Blues es una compañía de baile enfocada en la creación de bailarines multidisciplinarios dentro del ámbito del show business en México, que busca promover la buena salud mental y física, así como la filantropía a través del baile contemporáneo. Su contribución social se centra en fomentar la conciencia sobre la importancia del bienestar emocional y físico a través de la danza, al mismo tiempo que busca hacer visible el arte del baile contemporáneo a nivel estatal y próximamente nacional. 
             </MontserratText>
             <ThbLogo className="

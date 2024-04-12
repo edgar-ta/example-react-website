@@ -20,6 +20,11 @@ export default function(
         text-white
         [&[data-color="black"]]:text-black
 
+        [&[data-size="md"]]:text-2xl
+        [&[data-size="md"]]:sm:text-3xl
+        [&[data-size="md"]]:md:text-4xl
+        [&[data-size="md"]]:lg:text-4xl
+
         [&[data-size="lg"]]:text-3xl
         [&[data-size="lg"]]:sm:text-5xl
         [&[data-size="lg"]]:md:text-6xl

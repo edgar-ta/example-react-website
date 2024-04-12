@@ -26,6 +26,7 @@ export default function() {
             <ContributorTab contributorName="edgar" />
             <a href="mailto:spiders.devteam@google.com" className="
             flex
+            flex-col
             justify-center
             items-center
 

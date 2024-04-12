@@ -24,7 +24,7 @@ const contributors: {
     uli: [ 
         "Ulises Eduardo López Acosta", 
         "Jefe de Diseño Fullstack", 
-        "https://www.facebook.com" 
+        "https://www.instagram.com/dangerous_michi?igsh=MThhc3JpMGl5cjdiZA==" 
     ]
 };
 

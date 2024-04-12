@@ -38,10 +38,9 @@ export default function() {
             bg-black
             isolate
             ">
-                <SocialMediaIcon socialMediaType="facebook" />
-                <SocialMediaIcon socialMediaType="instagram" />
-                <SocialMediaIcon socialMediaType="youtube" />
-                <SocialMediaIcon socialMediaType="tiktok" />
+                <SocialMediaIcon socialMediaType="facebook" href="https://www.facebook.com/profile.php?id=100094593204974&mibextid=ZbWKwL" />
+                <SocialMediaIcon socialMediaType="instagram" href="https://www.instagram.com/thehouseofbluesmx?igsh=amN4dTV6dHU1Z3ky" />
+                <SocialMediaIcon socialMediaType="tiktok" href="https://www.tiktok.com/@thehouseofbluesmx?_t=8lO358zxL42&_r=1" />
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 export default function(
     props: {
-        children: Readonly<React.ReactNode>,
-        className: string
+        children?: Readonly<React.ReactNode>,
+        className?: string
     } 
 ) {
     const { children, className, ...everythingElse } = props;
@@ -9,6 +9,7 @@ export default function(
         <div className={`
         px-2
         xs:px-4
+        sm:px-16
         md:px-40
         lg:px-38
         xl:px-48
