@@ -9,7 +9,7 @@ const contributors: {
     carlos: [ 
         "Carlos Enrique Villarreal Barrón", 
         "Líder el Equipo", 
-        "https://www.instagram.com/enriquevilla_18" 
+        "https://www.instagram.com/enriquevilla_18?igsh=MXI1ZmU4eXlweXNoOQ==" 
     ],
     edgar: [ 
         "Edgar Trejo Avila", 
@@ -24,7 +24,7 @@ const contributors: {
     uli: [ 
         "Ulises Eduardo López Acosta", 
         "Jefe de Diseño Fullstack", 
-        "https://www.instagram.com/dangerous_michi" 
+        "https://www.instagram.com/dangerous_michi?igsh=MThhc3JpMGl5cjdiZA==" 
     ]
 };
 
