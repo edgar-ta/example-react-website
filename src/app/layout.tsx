@@ -27,7 +27,11 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "The House of Blues",
+  keywords: "dance,music,contemporary,modern,elegant,school,classes",
   description: "El sitio web de la empresa de baile contemporáneo",
+  creator: "Spiders Dev Team",
+  publisher: "The House of Blues",
+  
   authors: [
     {
       name: "Edgar Trejo Avila",
@@ -54,7 +58,7 @@ export const metadata: Metadata = {
     siteName: "The House of Blues",
     locale: "es_MX",
     images: {
-      url: theHouseOfBluesLogo.src,
+      url: "https://www.thehouseofblues.com.mx/thb-logo.png",
       width: theHouseOfBluesLogo.width,
       height: theHouseOfBluesLogo.height,
       alt: "Logo de The House of Blues"
@@ -66,7 +70,7 @@ export const metadata: Metadata = {
     title: "The House of Blues",
     description: "El sitio web de la empresa de baile contemporáneo",
     images: {
-      url: theHouseOfBluesLogo.src,
+      url: "https://www.thehouseofblues.com.mx/thb-logo.png",
       alt: "Logo de The House of Blues"
     }
   }
