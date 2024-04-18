@@ -17,13 +17,13 @@ export default function(
         ">
             <RosaliaText 
                 size="lg"
-                className="text-center"
+                className="text-center text-black"
                 >
                 {props.name}
             </RosaliaText>
             <RosaliaText 
                 size="md"
-                className="text-center"
+                className="text-center text-black"
                 >
                 {props.lastName}
             </RosaliaText>
