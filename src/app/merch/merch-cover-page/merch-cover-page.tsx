@@ -8,6 +8,7 @@ export default function() {
             alt="Primer show the The House of Blues"
             image={primerShow}
             hasMenu={true}
+            translate="no"
         >
             <RosaliaTitle size="md">
                 PRÓXIMAMENTE

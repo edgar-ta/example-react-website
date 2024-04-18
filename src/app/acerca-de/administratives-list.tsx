@@ -45,14 +45,14 @@ export default function() {
                     name="Bruno González"
                     charge="Director Creativo"
                     image={brunoGonzalez}
-                    >
-                </AdministrativeCard>
+                    socialMedia="https://www.instagram.com/brunogzgr/"
+                    />
                 <AdministrativeCard 
                     name="Emmanuel Dionet"
                     charge="Director Creativo"
                     image={emmanuelDionet}
-                    >
-                </AdministrativeCard>
+                    socialMedia="https://www.instagram.com/thelifeofdionet/"
+                    />
             </div>
             <div className="
             gap-4
@@ -64,22 +64,22 @@ export default function() {
             ">
                 <AdministrativeCard 
                     name="Jack González"
-                    charge="Director Creativo"
+                    charge="CEO"
                     image={jackGonzalez}
-                >
-                </AdministrativeCard>
+                    socialMedia="https://www.instagram.com/jackgonzalezmx/"
+                />
                 <AdministrativeCard 
                     name="Jess Guarneros"
                     charge="Director Creativo"
                     image={jessGuarneros}
-                >
-                </AdministrativeCard>
+                    socialMedia="https://www.instagram.com/heyjessjiimenez/"
+                />
                 <AdministrativeCard 
                     name="Danie Pagola"
                     charge="Director Creativo"
                     image={daniePagola}
-                >
-                </AdministrativeCard>
+                    socialMedia="https://www.instagram.com/daniepagola/"
+                />
             </div>
         </section>
     );

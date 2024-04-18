@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Menu from "@/app/components/menu/menu";
 import RosaliaTitle from "@/app/components/tipography/rosalia-title";
+import { HTMLAttributes } from "react";
 
 export default function(
     props: {
@@ -9,8 +10,10 @@ export default function(
         alt: string,
         children?: Readonly<React.ReactNode>,
         hasMenu?: boolean
-    }
+    } & HTMLAttributes<HTMLElement>
 ) {
+  const { className, image, alt, children, hasMenu, ...rest } = props;
+
     return (
         <section className="
         h-screen
@@ -18,8 +21,9 @@ export default function(
         w-screen
         overflow-hidden
         "
+        {...rest}
         >
-          <Image src={props.image} alt={props.alt}
+          <Image src={image} alt={alt}
           className="
           absolute
           top-1/2
@@ -37,7 +41,7 @@ export default function(
           "
           />
 
-          <Image src={props.image} alt={props.alt} 
+          <Image src={image} alt={alt} 
           className="
           absolute
           top-1/2
@@ -56,7 +60,7 @@ export default function(
           />
 
           {
-            props.hasMenu &&
+            hasMenu &&
             <Menu className="
             absolute
             top-0
@@ -74,7 +78,7 @@ export default function(
             w-max
             text-white
             ">
-                {props.children}
+                {children}
             </RosaliaTitle>
           </div>
         </section>

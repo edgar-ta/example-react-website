@@ -9,6 +9,7 @@ export default function() {
             image={equipoDeTheHouseOfBlues}
             alt="Equipo de The House of Blues"
             hasMenu={true}
+            translate="no"
         >
             <ThreeWordArrangement 
                 firstWord="MEET"

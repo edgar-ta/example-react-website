@@ -18,7 +18,7 @@ export default function() {
         py-16
         ">
             <CourierText size="md">
-                Av. Río Moctezuma no. 43, intersección A con B, San Juan del Río, Querétaro, México.
+                Geranios 91, Local 8, Indeco. San Juan del Río, Qro. México
             </CourierText>
 
             <div className="

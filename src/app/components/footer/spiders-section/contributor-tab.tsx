@@ -9,22 +9,22 @@ const contributors: {
     carlos: [ 
         "Carlos Enrique Villarreal Barrón", 
         "Líder el Equipo", 
-        "https://www.instagram.com/enriquevilla_18?igsh=MXI1ZmU4eXlweXNoOQ==" 
+        "https://www.instagram.com/enriquevilla_18" 
     ],
     edgar: [ 
         "Edgar Trejo Avila", 
         "Chief Software Engineer", 
-        "https://www.facebook.com" 
+        "https://www.instagram.com/__edgar_ta__/" 
     ],
     leo: [ 
         "Leonel Soto Alegría", 
         "Software Engineer", 
-        "https://www.facebook.com" 
+        "https://www.instagram.com/leonel_st.png/" 
     ],
     uli: [ 
         "Ulises Eduardo López Acosta", 
         "Jefe de Diseño Fullstack", 
-        "https://www.instagram.com/dangerous_michi?igsh=MThhc3JpMGl5cjdiZA==" 
+        "https://www.instagram.com/dangerous_michi" 
     ]
 };
 
@@ -49,6 +49,7 @@ export default function(
         ${props.className}
         `}
         href={socialMedia}
+        target="_blank"
         >
             <CourierLabel 
                 size="md"

@@ -14,6 +14,7 @@ export default function() {
         image={portada}
         alt="Miembros de The House of Blues"
         hasMenu={true}
+        translate="no"
         >
           <ThreeWordArrangement 
           firstWord="THE"

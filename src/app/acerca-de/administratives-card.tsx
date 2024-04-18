@@ -7,12 +7,13 @@ export default function(
     props: {
         name: string,
         charge: string,
+        socialMedia: string,
         children?: Readonly<React.ReactNode>,
         image: StaticImageData,
     }
 ) {
     return (
-        <div className="
+        <a className="
         w-full
         aspect-[9_/_16]
         md:aspect-[3_/_4]
@@ -25,7 +26,10 @@ export default function(
         items-stretch
         cursor-pointer
         overflow-hidden
-        ">
+        "
+        href={props.socialMedia}
+        target="_blank"
+        >
             <Image 
                 src={props.image}
                 alt={`Fotografía de ${props.name}`}
@@ -85,19 +89,7 @@ export default function(
                     {props.name}
                 </RosaliaTitle>
             </div>
-            {
-                props.children !== undefined &&
-                <div className="
-                border-t
-                border-t-white
-                border-opacity-50
-                justify-self-end
-                z-20
-                ">
-                    {props.children}
-                </div>
-            }
-        </div>
+        </a>
     );
 }
 
