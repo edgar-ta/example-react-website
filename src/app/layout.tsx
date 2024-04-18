@@ -5,6 +5,10 @@ import { Montserrat } from "next/font/google";
 
 import localFont from "next/font/local";
 
+import theHouseOfBluesLogo from "@/app/components/utils/thb-logo/thb-logo.png";
+
+import { OpenGraphType } from "next/dist/lib/metadata/types/opengraph-types";
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -40,6 +44,32 @@ export const metadata: Metadata = {
       name: "Ulises Eduardo López Acosta",
     },
   ],
+  openGraph: {
+    determiner: "the",
+    title: "The House of Blues",
+    description: "El sitio web de empresa de baile contemporáneo",
+    emails: "thehouseofbluesmx@gmail.com",
+    phoneNumbers: "+524271214020",
+    type: "website",
+    siteName: "The House of Blues",
+    locale: "es_MX",
+    images: {
+      url: theHouseOfBluesLogo.src,
+      width: theHouseOfBluesLogo.width,
+      height: theHouseOfBluesLogo.height,
+      alt: "Logo de The House of Blues"
+    },
+    url: "https://www.thehouseofblues.com.mx",
+  },
+  twitter: {
+    card: "summary",
+    title: "The House of Blues",
+    description: "El sitio web de la empresa de baile contemporáneo",
+    images: {
+      url: theHouseOfBluesLogo.src,
+      alt: "Logo de The House of Blues"
+    }
+  }
 };
 
 const rosalia = localFont({
@@ -59,6 +89,7 @@ export default function RootLayout({
       ${inter.className} 
       ${rosalia.variable} 
       ${courier.variable}
+      ${montserrat.variable}
       w-full
       overflow-x-clip
       `}>
