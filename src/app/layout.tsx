@@ -25,7 +25,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "The House of Blues",
-  keywords: "dance,music,contemporary,modern,elegant,school,classes,mexico",
+  keywords: "dance,music,contemporary,modern,elegant,school,classes,mexico,the,house,of,blues",
   description: "El sitio web de la empresa de baile contemporáneo",
   creator: "Spiders Dev Team",
   publisher: "The House of Blues",
@@ -60,6 +60,7 @@ export const metadata: Metadata = {
       name: "Ulises Eduardo López Acosta",
     },
   ],
+
   openGraph: {
     determiner: "the",
     title: "The House of Blues",
@@ -77,6 +78,7 @@ export const metadata: Metadata = {
     },
     url: "https://www.thehouseofblues.com.mx",
   },
+
   twitter: {
     card: "summary",
     title: "The House of Blues",
