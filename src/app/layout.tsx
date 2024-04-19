@@ -89,7 +89,9 @@ export const metadata: Metadata = {
     description: shortDescription,
     images: {
       url: "https://www.thehouseofblues.com.mx/thb-logo.png",
-      alt: logoDescription
+      alt: logoDescription,
+      width: 500,
+      height: 500
     }
   }
 };
