@@ -23,12 +23,16 @@ const montserrat = Montserrat({
   subsets: [ "latin-ext" ]
 });
 
+const companyName = "The House of Blues";
+const shortDescription = "El sitio web de la empresa de baile contemporáneo";
+const logoDescription = "Logo de The House of Blues";
+
 export const metadata: Metadata = {
-  title: "The House of Blues",
+  title: companyName,
   keywords: "dance,music,contemporary,modern,elegant,school,classes,mexico,the,house,of,blues",
-  description: "El sitio web de la empresa de baile contemporáneo",
+  description: "The House of Blues es una compañía de baile enfocada en la creación de bailarines multidisciplinarios dentro del ámbito del show business en México, que busca promover la buena salud mental y física, así como la filantropía a través del baile contemporáneo. Su contribución social se centra en fomentar la conciencia sobre la importancia del bienestar emocional y físico a través de la danza, al mismo tiempo que busca hacer visible el arte del baile contemporáneo a nivel estatal y próximamente nacional.",
   creator: "Spiders Dev Team",
-  publisher: "The House of Blues",
+  publisher: companyName,
   icons: [
     {
       url: "https://www.thehouseofblues.com.mx/thb-logo.png",
@@ -63,29 +67,29 @@ export const metadata: Metadata = {
 
   openGraph: {
     determiner: "the",
-    title: "The House of Blues",
-    description: "El sitio web de empresa de baile contemporáneo",
+    title: companyName,
+    description: shortDescription,
     emails: "thehouseofbluesmx@gmail.com",
     phoneNumbers: "+524271214020",
     type: "website",
-    siteName: "The House of Blues",
+    siteName: companyName,
     locale: "es_MX",
     images: {
       url: "https://www.thehouseofblues.com.mx/thb-logo.png",
       width: 500,
       height: 500,
-      alt: "Logo de The House of Blues"
+      alt: logoDescription
     },
     url: "https://www.thehouseofblues.com.mx",
   },
 
   twitter: {
     card: "summary",
-    title: "The House of Blues",
-    description: "El sitio web de la empresa de baile contemporáneo",
+    title: companyName,
+    description: shortDescription,
     images: {
       url: "https://www.thehouseofblues.com.mx/thb-logo.png",
-      alt: "Logo de The House of Blues"
+      alt: logoDescription
     }
   }
 };
