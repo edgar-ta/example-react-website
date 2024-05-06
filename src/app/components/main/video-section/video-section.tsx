@@ -17,7 +17,7 @@ async function VideoComponent() {
                     Cargando video
                 </div>
             }>
-                <video autoPlay loop controls preload="none" aria-label="Video player" 
+                <video loop controls preload="none" aria-label="Video player" 
                 className="
                 absolute
                 top-0
