@@ -1,3 +1,12 @@
+El presente proyecto es una página informativa realizada para la compañía de baile contemporáneo "The House of Blues";
+se llevó a cabo como parte de uno de los requisitos de evaluación para la clase de Metodologías de Modelado y Desarrollo de
+Software de la Universidad Tecnológica de San Juan del Río (UTSJR), y es gracias a ella que se obtuvo una calificación
+aprobatoria en el cuatrimestre comprendido entre los meses de enero y abril del 2024.
+
+Como parte del plan de estudios de la universidad --que busca preparar a sus estudiantes para situaciones comunes del mundo laboral de verdad--, los participantes de este proyecto debieron formar una empresa ficticia (la cual, después de mucha deliberación, recibió el nombre de "Spiders") y desarrollar --bajo su nombre-- un proyecto sencillo para un cliente real.
+
+![Fotografía de los miembros de Spiders y directivos de The House of Blues](./presentacion-final.jpg)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

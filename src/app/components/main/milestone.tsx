@@ -12,7 +12,7 @@ export default function(
         month: "ene" | "feb" | "mar" | "abr" | "may" | "jun" | "jul" | "ago" | "sep" | "oct" | "nov" | "dic",
         imageOrientation: "left" | "right",
         image: StaticImageData,
-        alt: string,
+        alt?: string,
         description: string,
         style: "black" | "white"
     }
@@ -99,6 +99,7 @@ export default function(
 
             aspect-square
             relative
+            overflow-hidden
 
             w-full
             col-span-2
@@ -121,7 +122,11 @@ export default function(
 
                     absolute
                     sm:[&[data-image-type='taller']]:w-full
+                    sm:[&[data-image-type='taller']]:h-auto
+                    sm:[&[data-image-type='taller']]:max-h-none
                     sm:[&[data-image-type='wider']]:h-full
+                    sm:[&[data-image-type='wider']]:w-auto
+                    sm:[&[data-image-type='wider']]:max-w-none
 
                     left-1/2
                     top-1/2
@@ -129,7 +134,7 @@ export default function(
                     -translate-y-1/2
                     "
                     src={props.image} 
-                    alt={props.alt} />
+                    alt={props.alt ?? ""} />
             </div>
             <MontserratText 
                 size="md"

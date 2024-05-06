@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/blob": "^0.23.2",
     "@vercel/speed-insights": "^1.0.10",
     "hamburger-react": "^2.5.0",
     "next": "14.1.0",

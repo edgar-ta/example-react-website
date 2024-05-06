@@ -15,6 +15,12 @@ import image_11__2023_07_01 from "./images/11--2023-07-01.png";
 import image_12__2023_07_24 from "./images/12--2023-07-24.png";
 import image_13__2023_07_26 from "./images/13--2023-07-26.png";
 
+import image_16__2023_08_16 from "./images/16--2023-08-16.jpg";
+import image_17__2023_09_02 from "./images/17--2023-09-02.jpg";
+import image_18__2023_11_12 from "./images/18--2023-11-12.jpg";
+import image_19__2023_12_01 from "./images/19--2023-12-01.jpg";
+import image_20__2023_12_17 from "./images/20--2023-12-17.jpg";
+import image_21__2024_02_02 from "./images/21--2024-02-02.jpg";
 
 import Thread from "./thread/thread";
 import TimelineCover from "./timeline-cover";
@@ -41,8 +47,8 @@ export default function() {
                     />
                 <Moment 
                     image={image_2__2022_11}
-                    content="Primer entrenamiento de la compañía a cargo de la maestra Sam Contreras"
-                    imageAlignment="right"
+                    description="Primer entrenamiento de la compañía a cargo de la maestra Sam Contreras"
+                    imageOrientation="right"
                     style="white"
                     title="NOVIEMBRE DEL 2022"
                     />
@@ -57,15 +63,15 @@ export default function() {
                     />
                 <Moment 
                     image={image_4__2022_11_26}
-                    content="Entrenamiento a cargo de la maestra Amber Limbs"
-                    imageAlignment="left"
+                    description="Entrenamiento a cargo de la maestra Amber Limbs"
+                    imageOrientation="left"
                     style="white"
                     title="26 de noviembre del 2022"
                     />
                 <Moment 
                     image={image_6__2022_12_17}
-                    content="Cierre de actividades de la compañía “Mercadito Emprendedor” en San Juan del Río"
-                    imageAlignment="left"
+                    description="Cierre de actividades de la compañía “Mercadito Emprendedor” en San Juan del Río"
+                    imageOrientation="left"
                     style="white"
                     title="17 de diciembre del 2022"
                     />
@@ -76,20 +82,20 @@ export default function() {
                     month="ene"
                     year={2023}
                     alt="Fotografía de los directivos de THB"
-                    style="black"
+                    style="white"
                     />
                 <Moment 
                     image={image_8__2023_01_14}
-                    content="Arranque del primer semestre oficial de la compañía"
-                    imageAlignment="left"
-                    style="black"
+                    description="Arranque del primer semestre oficial de la compañía"
+                    imageOrientation="left"
+                    style="white"
                     title="14 de enero del 2023"
                     />
                 <Moment 
                     image={image_9__2023_04_20}
-                    content="Se hace la primera sesión de fotos con el concepto de “The House of Blues”"
-                    imageAlignment="right"
-                    style="black"
+                    description="Se hace la primera sesión de fotos con el concepto de “The House of Blues”"
+                    imageOrientation="right"
+                    style="white"
                     title="20 de abril del 2023"
                     />
                 <Milestone 
@@ -103,26 +109,69 @@ export default function() {
                     />
                 <Moment 
                     image={image_11__2023_07_01}
-                    content="Se inician los ensayos generales con todos los miembros del team “Tsunami”"
-                    imageAlignment="left"
+                    description="Se inician los ensayos generales con todos los miembros del team “Tsunami”"
+                    imageOrientation="left"
                     style="black"
                     title="11 de julio del 2023"
                     />
                 <Moment 
                     image={image_12__2023_07_24}
-                    content="Se hace la sesión de fotos para la promoción del show debut “Tsunami”"
-                    imageAlignment="right"
+                    description="Se hace la sesión de fotos para la promoción del show debut “Tsunami”"
+                    imageOrientation="right"
                     style="black"
                     title="24 de julio del 2023"
                     />
                 <Moment 
                     image={image_13__2023_07_26}
-                    content="Clase especial con la maestra Nelly Garcia"
-                    imageAlignment="left"
+                    description="Clase especial con la maestra Nelly Garcia"
+                    imageOrientation="left"
                     style="black"
                     title="26 de julio del 2023"
                     />
-                
+                <Milestone 
+                    image={image_16__2023_08_16}
+                    description="Se anuncia oficialmente “Tsunami” el show debut de The House of Blues y con ello las primeras dos fechas en el Portal del Diezmo, ambas siendo un total “Sold Out”"
+                    imageOrientation="right"
+                    style="black"
+                    month="ago"
+                    year={2023}
+                    />
+                <Moment 
+                    image={image_17__2023_09_02}
+                    imageOrientation="left"
+                    description="Arranque el tour “Tsunami, 2023”, con un total de 14 fechas a lo largo de San Juan del Río"
+                    style="black"
+                    title="02 de septiembre del 2023"
+                    />
+                <Moment 
+                    image={image_18__2023_11_12}
+                    imageOrientation="right"
+                    description="Aniversario de la compañía con una clase especial de la maestra Ximena Ortega”"
+                    style="black"
+                    title="12 de noviembre del 2023"
+                    />
+                <Moment 
+                    image={image_19__2023_12_01}
+                    imageOrientation="left"
+                    description="The House of Blues es parte del musical “Navidad en Broadway” de la compañía de teatro “Vendaval”"
+                    style="black"
+                    title="01 de diciembre del 2023"
+                    />
+                <Moment 
+                    image={image_20__2023_12_17}
+                    imageOrientation="right"
+                    description="cierre de actividades del año presente con la primer posada de la compañía"
+                    style="black"
+                    title="17 de diciembre del 2023"
+                    />
+                <Milestone
+                    image={image_21__2024_02_02}
+                    imageOrientation="left"
+                    description="Postulación al premio municipal de la juventud en la categoría “arte y cultura”"
+                    style="black"
+                    month="feb"
+                    year={2024}
+                    />
                 <Thread 
                     className="
                     top-0
